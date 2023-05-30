@@ -109,9 +109,9 @@
 	</pluginRepositories>
 	<distributionManagement>
 		<repository>
-			<id>anypoint-exchange-v3</id>
+			<id>anypoint-exchange-v2</id>
 			<name>Exchange Repository</name>
-			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/66c1049c-ed5c-4f46-9751-33061eb2ce2b/maven</url>
+			<url>https://maven.anypoint.mulesoft.com/api/v2/organizations/66c1049c-ed5c-4f46-9751-33061eb2ce2b/maven</url>
 			<layout>default</layout>
 		</repository>
 	</distributionManagement>
