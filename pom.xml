@@ -4,7 +4,7 @@
 
 	<groupId>66c1049c-ed5c-4f46-9751-33061eb2ce2b</groupId>
 	<artifactId>githubactionsci-cdpipeline</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
 	<name>githubactionsci-cdpipeline</name>
@@ -22,7 +22,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
-				<version>3.0.0</version>
+				<version>3.2.0</version>
 			</plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
