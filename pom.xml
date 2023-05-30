@@ -30,18 +30,38 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<classifier>mule-application</classifier>
-					<cloudHubDeployment>
+					<runtimeFabricDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>${anypoint.muleVersion}</muleVersion>
+						<muleVersion>4.3.0</muleVersion>
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
 						<applicationName>${anypoint.appName}</applicationName>
+						<target>alphonsendri-rtf</target>
 						<environment>${anypoint.env}</environment>
+						<businessGroupId>66c1049c-ed5c-4f46-9751-33061eb2ce2b</businessGroupId>
+						<provider>MC</provider>
+						<replicas>1</replicas>
 						<region>${anypoint.region}</region>
-						<workers>${anypoint.workers}</workers>
-						<objectStoreV2>true</objectStoreV2>
-					</cloudHubDeployment>
+						<deploymentTimeout>5000000</deploymentTimeout>
+						<deploymentSettings>
+							<enforceDeployingReplicasAcrossNodes>false</enforceDeployingReplicasAcrossNodes>
+							<updateStrategy>recreate</updateStrategy>
+							<clustered>false</clustered>
+							<forwardSslSession>false</forwardSslSession>
+							<lastMileSecurity>true</lastMileSecurity>
+							<resources>
+								<cpu>
+									<reserved>20m</reserved>
+									<limit>1500m</limit>
+								</cpu>
+								<memory>
+									<reserved>700Mi</reserved>
+									<limit>800Mi</limit>
+								</memory>
+							</resources>
+						</deploymentSettings>
+					</runtimeFabricDeployment>
+					<classifier>mule-application</classifier>
 				</configuration>
 			</plugin>
 		</plugins>
