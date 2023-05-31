@@ -41,7 +41,6 @@
 						<businessGroupId>66c1049c-ed5c-4f46-9751-33061eb2ce2b</businessGroupId>
 						<provider>MC</provider>
 						<replicas>1</replicas>
-						<deploymentTimeout>5000000</deploymentTimeout>
 						<deploymentSettings>
 							<enforceDeployingReplicasAcrossNodes>false</enforceDeployingReplicasAcrossNodes>
 							<updateStrategy>recreate</updateStrategy>
