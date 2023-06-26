@@ -29,35 +29,19 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				<configuration>
+								<configuration>
 					<classifier>mule-application</classifier>
-										<cloudhub2Deployment>
+					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<provider>MC</provider>
-						<environment>${anypoint.env}</environment>
-						<target>Cloudhub-US-East-1</target>
 						<muleVersion>${anypoint.muleVersion}</muleVersion>
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
 						<applicationName>${anypoint.appName}</applicationName>
-						<businessGroupId>66c1049c-ed5c-4f46-9751-33061eb2ce2b</businessGroupId>
-						<replicas>1</replicas>
-						<vCores>1</vCores>
-						<properties>
-							<!-- <anypoint.platform.client_id>dbdea89f63e74fffa087066e68bddb03</anypoint.platform.client_id>
-								<anypoint.platform.client_secret>7D01712364C24AD29F2E8d946D414de4</anypoint.platform.client_secret> -->
-						</properties>
-						<deploymentSettings>
-							<!--  <http>
-			          <inbound>
-			            <publicUrl>https://${anypoint.appName}</publicUrl>
-			            <lastMileSecurity>true</lastMileSecurity>
-			          </inbound>
-			        </http>
-			        <generateDefaultPublicUrl>true</generateDefaultPublicUrl>-->
-						</deploymentSettings>
-					</cloudhub2Deployment>
-
+						<environment>${anypoint.env}</environment>
+						<region>${anypoint.region}</region>
+						<workers>${anypoint.workers}</workers>
+						<objectStoreV2>true</objectStoreV2>
+					</cloudHubDeployment>
 				</configuration>
 				
 				
