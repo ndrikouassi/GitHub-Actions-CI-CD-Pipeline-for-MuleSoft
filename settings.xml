@@ -21,7 +21,16 @@
       <username>${ secrets.ANYPOINT_USERNAME }</username>
       <password>${ secrets.ANYPOINT_PASSWORD }</password>
     </server>
-	  
+            <server>
+			<id>anypoint-exchange-v3</id>
+			<username>~~~Client~~~</username>
+			<password>{ secrets.CA_CLIENT_ID }~?~{secrets.CA_CLIENT_SECRET}</password>
+		</server>
+		<server>
+			<id>anypoint-exchange-v2</id>
+			<username>~~~Client~~~</username>
+			<password>{ secrets.CA_CLIENT_ID }~?~{secrets.CA_CLIENT_SECRET}</password>
+		</server>	  
 	  <server>
       <id>ndrikouassi</id>
       <username>ndrikouassi</username>
