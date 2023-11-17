@@ -4,7 +4,7 @@ agent any
 
 stages {
 
-stage(‘Build Application’) {
+stage(‘Build’) {
 
 steps {
 
