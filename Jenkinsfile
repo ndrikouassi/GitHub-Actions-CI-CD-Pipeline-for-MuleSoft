@@ -25,7 +25,7 @@ sh "mvn test"
 
 }
 
-stage(‘Deploy CloudHub’) {
+stage(‘CloudHub’) {
 
 environment {
 
